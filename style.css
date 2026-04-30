@@ -795,6 +795,16 @@ footer::before {
         height: 600px;
     }
 
+    .about p,
+    .value-card p,
+    .testimonial-item p,
+    .service-item p {
+        text-align: left;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+
     .footer-content {
         flex-direction: column;
         gap: 1rem;
