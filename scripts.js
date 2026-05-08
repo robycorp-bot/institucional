@@ -1,13 +1,18 @@
 // Typing Effect for Hero - Enhanced
 const typingText = document.getElementById('typing-text');
-const text = "Bem-vindo à Robycorp";
+const text = "Sites orgânicos, Ads, Google Meu Negócio e consultoria sênior para sua transformação digital.";
 let index = 0;
 
 function typeWriter() {
+    if (!typingText) return;
+    if (index === 0) {
+        typingText.innerHTML = '';
+    }
+
     if (index < text.length) {
         typingText.innerHTML += text.charAt(index);
         index++;
-        setTimeout(typeWriter, 80);
+        setTimeout(typeWriter, 60);
     }
 }
 
